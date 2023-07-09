@@ -33,7 +33,7 @@
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type t)
+(setq display-line-numbers-type 'relative)
 
 
 ;; Here are some additional functions/macros that could help you configure Doom:
@@ -55,7 +55,7 @@
 
 ;; this is where i'm going to configure the deft pluging for org mode
 (setq deft-directory "~/org/")
-(setq deft-extensions '("org" "txt" "md"))
+(setq deft-extensions '("org"))
 (setq deft-recursive t)
 
 
@@ -65,3 +65,4 @@
       org-journal-date-format "%a, %Y-%m-%d"
       org-journal-file-format "%Y-%m-%d.org")
 
+(setq org-roam-directory "~/org/roam")
