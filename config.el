@@ -31,8 +31,6 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/" )
 
-(setq org-journal-dir "~/org-jfl/org-journal/")
-
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type 'relative)
@@ -68,3 +66,7 @@
       org-journal-file-format "%Y-%m-%d.org")
 
 (setq org-roam-directory "~/org/roam")
+
+;; Set this myself, but it broke org-capture somehow
+(setq org-journal-dir "~/org-jfl/org-journal/")
+
