@@ -70,3 +70,13 @@
 ;; Set this myself, but it broke org-capture somehow
 (setq org-journal-dir "~/org-jfl/org-journal/")
 
+;; Enable visual-line-mode for soft wrapping
+(add-hook 'text-mode-hook #'visual-line-mode)
+(add-hook 'prog-mode-hook #'visual-line-mode)
+
+;; Use visual-fill-column-mode for an 80-character wrap
+(use-package! visual-fill-column
+  :hook (visual-line-mode . visual-fill-column-mode)
+  :config
+  (setq visual-fill-column-width 80
+        visual-fill-column-center-text nil)) ;; Keep left-aligned instead of centering
